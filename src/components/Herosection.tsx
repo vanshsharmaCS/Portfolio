@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export const products = [
     {
-        title: "Algochurn",
-        link: "https://algochurn.com",
+        title: "GitHub",
+        link: "https://github.com/vanshsharmaCS",
         thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+        "/github.png", 
     },
     {
         title: "LeetCode",
@@ -18,10 +18,10 @@ export const products = [
     },
     
     {
-        title: "GitHub",
-        link: "https://github.com/vanshsharmaCS",
+        title: "Algochurn",
+        link: "https://algochurn.com",
         thumbnail:
-        "/github.png", 
+        "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
     },
     {
       title: "LinkedIn",
@@ -43,16 +43,16 @@ export const products = [
     },
     
     {
-        title: "Aceternity UI",
-        link: "https://ui.aceternity.com",
-        thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-    },
-    {
         title: "CodeForces",
         link: "https://codeforces.com/profile/vansh9927",
         thumbnail:
         "/codeforces.png",
+    },
+    {
+        title: "Aceternity UI",
+        link: "https://ui.aceternity.com",
+        thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
     },
     {
       title: "Tailwind Master Kit",
