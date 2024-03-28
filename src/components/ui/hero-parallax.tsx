@@ -104,13 +104,13 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold text-yellow-500">
+      <h1 className="text-2xl md:text-7xl font-bold text-white">
         Vansh Sharma <br /> Enthusiastic Coder
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-[#caff39]">
+        
+Currently pursuing my second year of B.Tech at GLA University, Mathura,
+ delving into various engineering subjects to enhance my understanding and skills in technology.
       </p>
     </div>
   );
@@ -136,7 +136,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product md:h-96 md:w-[30rem]  h-56 w-[25rem] relative flex-shrink-0"
     >
       <Link
         href={product.link} target="_new"
@@ -146,11 +146,11 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute md:h-full md:w-full h-[20rem] w-[30rem] m-5 inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
         />
       </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:scale-110  bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>

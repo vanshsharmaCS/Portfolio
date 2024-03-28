@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export const products = [
     {
-        title: "CodeForces",
-        link: "https://codeforces.com/profile/vansh9927",
+        title: "Algochurn",
+        link: "https://algochurn.com",
         thumbnail:
-        "/codeforces.png",
+        "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
     },
     {
         title: "LeetCode",
@@ -27,32 +27,32 @@ export const products = [
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/vansh-sharma-2954a2246/",
       thumbnail:
-        "/linkedin.png",
+      "/linkedin.png",
     },
     {
-      title: "Editrix AI",
-      link: "https://editrix.ai",
-      thumbnail:
+        title: "Editrix AI",
+        link: "https://editrix.ai",
+        thumbnail:
         "https://aceternity.com/images/products/thumbnails/new/editrix.png",
     },
     {
-      title: "Pixel Perfect",
-      link: "https://app.pixelperfect.quest",
-      thumbnail:
+        title: "Pixel Perfect",
+        link: "https://app.pixelperfect.quest",
+        thumbnail:
         "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
     },
-   
+    
     {
-      title: "Algochurn",
-      link: "https://algochurn.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+        title: "Aceternity UI",
+        link: "https://ui.aceternity.com",
+        thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
     },
     {
-      title: "Aceternity UI",
-      link: "https://ui.aceternity.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+        title: "CodeForces",
+        link: "https://codeforces.com/profile/vansh9927",
+        thumbnail:
+        "/codeforces.png",
     },
     {
       title: "Tailwind Master Kit",
