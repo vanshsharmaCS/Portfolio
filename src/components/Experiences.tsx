@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Experiences = () => {
     return (
-        <div className="w-full h-full mx-auto flex flex-col justify-center  bg-black text-white pt-24">
+        <div className="w-full h-fit mx-auto flex flex-col justify-center  bg-black text-white pt-24">
           <div className=" font-extrabold text-4xl md:text-7xl text-center">Experience</div>
           <div className="mt-[-20rem] ">
           <MacbookScroll
@@ -14,7 +14,7 @@ const Experiences = () => {
               </span>
             }
             badge={
-              <Link href="https://peerlist.io/manuarora">
+              <Link href="">
                 <Badge className="h-10 w-10 transform -rotate-12" />
               </Link>
             }

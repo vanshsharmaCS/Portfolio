@@ -3,6 +3,7 @@ import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 import Image from "next/image";
 
+
 export const products = [
     {
         title: "GitHub",
