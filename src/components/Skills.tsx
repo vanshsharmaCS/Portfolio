@@ -4,9 +4,9 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div className='my-8 flex flex-col justify-center'>
+    <div className='my-8 flex flex-col flex-wrap justify-center'>
       <div className='text-5xl text-white text-center font-bold mb-4'>My Skills</div>
-      <div className='flex flex-wrap gap-5 w-[50rem] justify-center md:ml-72'>
+      <div className='flex flex-wrap gap-5 max-w-[50rem] justify-center md:ml-72'>
         <img src={'/c-program-icon.png'} alt="C" className='w-20 h-20 rounded-md  transition-transform duration-300 transform hover:scale-110 hover:shadow-lg glowing' />
         <img src={'/cpp.png'} alt="C++" className='w-20 h-20 rounded-md  transition-transform duration-300 transform hover:scale-110 hover:shadow-lg glowing' />
         <img src={'/j.png'} alt="Java" className='w-20 h-20 rounded-md  transition-transform duration-300 transform hover:scale-110 hover:shadow-lg glowing' />
