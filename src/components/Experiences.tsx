@@ -18,7 +18,7 @@ const Experiences = () => {
                 <Badge className="h-10 w-10 transform -rotate-12" />
               </Link>
             }
-            src={`/linkedin.png`}
+            src={`/experience.png`}
             showGradient={false}
           />
           </div>
