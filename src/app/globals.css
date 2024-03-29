@@ -8,15 +8,3 @@ body{
     color: #333;
 }
 /* Add glowing effect */
-.glowing {
-  animation: glowing-animation 1.5s infinite alternate;
-}
-
-@keyframes glowing-animation {
-  from {
-    filter: drop-shadow(0 0 0px #fff);
-  }
-  to {
-    filter: drop-shadow(0 0 10px #94bfff);
-  }
-}
