@@ -9,7 +9,7 @@ export function Experiences() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-[5rem] font-semibold text-white dark:text-white">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-white dark:text-white">
             Experience <br />
               <br />
 
