@@ -7,8 +7,10 @@ import Link from "next/link";
 
 export function Project() {
   return (
+    <>
+    <h1 className="text-5xl md:text-6xl lg:text-6xl font-semibold text-white dark:text-white flex justify-center mb-14"> Projects </h1>
+
     <div className="flex flex-wrap m-5 p-5 justify-center  gap-20 max-w-[1180px] mx-auto">
-    
     <CardContainer className="inter-var">
       <CardBody className="bg-gradient-to-br from-blue-400 to-blue-600 bg-opacity-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
@@ -153,5 +155,6 @@ export function Project() {
       </CardBody>
     </CardContainer>
     </div>
+    </>
   );
 }
