@@ -1,71 +1,148 @@
+"use client";
 import React from "react";
-import { MacbookScroll } from "./ui/macbook-scroll";
-import Link from "next/link";
+import { ContainerScroll } from "./ui/container-scroll-animation";
+import Image from "next/image";
 
-const Experiences = () => {
-    return (
-        <div className="w-full h-fit mx-auto flex flex-col justify-center  bg-black text-white pt-24">
-          <div className=" font-extrabold text-4xl md:text-7xl text-center">Experience</div>
-          <div className="mt-[-20rem] ">
-          <MacbookScroll
-            title={
-              <span className=" font-serif text-white">
-              
-              </span>
-            }
-            badge={
-              <Link href="">
-                <Badge className="h-10 w-10 transform -rotate-12" />
-              </Link>
-            }
-            src={`/experience.png`}
-            showGradient={false}
-          />
-          </div>
-        </div>
-      );
+export function Experiences() {
+  return (
+    <div className="flex flex-col overflow-hidden">
+      <ContainerScroll
+        titleComponent={
+          <>
+            <h1 className="text-[5rem] font-semibold text-white dark:text-white">
+            Experience <br />
+              <br />
+
+            </h1>
+          </>
+        }
+      >
+        <Image
+          src={'/experience.png'}
+          alt="hero"
+          height={720}
+          width={1400}
+          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          draggable={false}
+        />
+      </ContainerScroll>
+    </div>
+  );
 }
 
-
-const Badge = ({ className }: { className?: string }) => {
-    return (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 56 56"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={className}
-      >
-        <path
-          d="M56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28Z"
-          fill="#00AA45"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M28 54C42.3594 54 54 42.3594 54 28C54 13.6406 42.3594 2 28 2C13.6406 2 2 13.6406 2 28C2 42.3594 13.6406 54 28 54ZM28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z"
-          fill="#219653"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M27.0769 12H15V46H24.3846V38.8889H27.0769C34.7305 38.8889 41 32.9048 41 25.4444C41 17.984 34.7305 12 27.0769 12ZM24.3846 29.7778V21.1111H27.0769C29.6194 21.1111 31.6154 23.0864 31.6154 25.4444C31.6154 27.8024 29.6194 29.7778 27.0769 29.7778H24.3846Z"
-          fill="#24292E"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M18 11H29.0769C36.2141 11 42 16.5716 42 23.4444C42 30.3173 36.2141 35.8889 29.0769 35.8889H25.3846V43H18V11ZM25.3846 28.7778H29.0769C32.1357 28.7778 34.6154 26.39 34.6154 23.4444C34.6154 20.4989 32.1357 18.1111 29.0769 18.1111H25.3846V28.7778Z"
-          fill="white"
-        ></path>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17 10H29.0769C36.7305 10 43 15.984 43 23.4444C43 30.9048 36.7305 36.8889 29.0769 36.8889H26.3846V44H17V10ZM19 12V42H24.3846V34.8889H29.0769C35.6978 34.8889 41 29.7298 41 23.4444C41 17.1591 35.6978 12 29.0769 12H19ZM24.3846 17.1111H29.0769C32.6521 17.1111 35.6154 19.9114 35.6154 23.4444C35.6154 26.9775 32.6521 29.7778 29.0769 29.7778H24.3846V17.1111ZM26.3846 19.1111V27.7778H29.0769C31.6194 27.7778 33.6154 25.8024 33.6154 23.4444C33.6154 21.0864 31.6194 19.1111 29.0769 19.1111H26.3846Z"
-          fill="#24292E"
-        ></path>
-      </svg>
-    );
-  };
-export default Experiences
+export const users = [
+  {
+    name: "Manu Arora",
+    designation: "Founder, Algochurn",
+    image: "https://picsum.photos/id/10/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Sarah Singh",
+    designation: "Founder, Sarah's Kitchen",
+    image: "https://picsum.photos/id/11/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "John Doe",
+    designation: "Software Engineer, Tech Corp",
+    image: "https://picsum.photos/id/12/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Jane Smith",
+    designation: "Product Manager, Innovate Inc",
+    image: "https://picsum.photos/id/13/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Robert Johnson",
+    designation: "Data Scientist, DataWorks",
+    image: "https://picsum.photos/id/14/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Emily Davis",
+    designation: "UX Designer, DesignHub",
+    image: "https://picsum.photos/id/15/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Michael Miller",
+    designation: "CTO, FutureTech",
+    image: "https://picsum.photos/id/16/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Sarah Brown",
+    designation: "CEO, StartUp",
+    image: "https://picsum.photos/id/17/300/300",
+  },
+  {
+    name: "James Wilson",
+    designation: "DevOps Engineer, CloudNet",
+    image: "https://picsum.photos/id/18/300/300",
+    badge: "Something",
+  },
+  {
+    name: "Patricia Moore",
+    designation: "Marketing Manager, MarketGrowth",
+    image: "https://picsum.photos/id/19/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Richard Taylor",
+    designation: "Frontend Developer, WebSolutions",
+    image: "https://picsum.photos/id/20/300/300",
+  },
+  {
+    name: "Linda Anderson",
+    designation: "Backend Developer, ServerSecure",
+    image: "https://picsum.photos/id/21/300/300",
+  },
+  {
+    name: "William Thomas",
+    designation: "Full Stack Developer, FullStack",
+    image: "https://picsum.photos/id/22/300/300",
+    badge: "Badger",
+  },
+  {
+    name: "Elizabeth Jackson",
+    designation: "Project Manager, ProManage",
+    image: "https://picsum.photos/id/23/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "David White",
+    designation: "Database Administrator, DataSafe",
+    image: "https://picsum.photos/id/24/300/300",
+    badge: "Advocate",
+  },
+  {
+    name: "Jennifer Harris",
+    designation: "Network Engineer, NetConnect",
+    image: "https://picsum.photos/id/25/300/300",
+  },
+  {
+    name: "Charles Clark",
+    designation: "Security Analyst, SecureIT",
+    image: "https://picsum.photos/id/26/300/300",
+  },
+  {
+    name: "Susan Lewis",
+    designation: "Systems Analyst, SysAnalyse",
+    image: "https://picsum.photos/id/27/300/300",
+  },
+  {
+    name: "Joseph Young",
+    designation: "Mobile Developer, AppDev",
+    image: "https://picsum.photos/id/28/300/300",
+    badge: "Mentor",
+  },
+  {
+    name: "Margaret Hall",
+    designation: "Quality Assurance, BugFree",
+    image: "https://picsum.photos/id/29/300/300",
+    badge: "Developer",
+  },
+];
