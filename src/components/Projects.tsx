@@ -88,7 +88,7 @@ export function Project() {
           translateZ="50"
           className="text-4xl  font-extrabold text-white dark:text-white"
         >
-          WeaterApp
+          Weather App
         </CardItem>
         <CardItem
           as="p"
