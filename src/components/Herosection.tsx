@@ -19,7 +19,7 @@ export function Herosection() {
        Vansh Shamra <br /> Enthusiastic Coder
        <p className="max-w-2xl text-base md:text-xl mt-8 text-gradient-to-br from-slate-300 to-slate-500">
         
-Currently pursuing my second year of B.Tech at GLA University, Mathura,
+Currently pursuing pre-final year of B.Tech at GLA University, Mathura,
  delving into various engineering subjects to enhance my understanding and skills in technology.
       </p>
       </motion.h1>
