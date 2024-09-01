@@ -36,7 +36,7 @@ export function Project() {
           />
         </CardItem>
         <div className="flex justify-between items-center mt-10">
-          
+        <a href="https://github.com/vanshsharmaCS/Coding">
           <CardItem
             translateZ={20}
             as="button"
@@ -44,6 +44,7 @@ export function Project() {
           >
             Live
           </CardItem>
+          </a>
         </div>
       </CardBody>
     </CardContainer>
@@ -71,15 +72,17 @@ export function Project() {
           />
         </CardItem>
         <div className="flex justify-between items-center mt-10">
-          
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-md font-bold"
-          >
-            Live
-          </CardItem>
-        </div>
+  <a href="https://github.com/vanshsharmaCS/AssignmentBot">
+    <CardItem
+      translateZ={20}
+      as="button"
+      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-md font-bold"
+    >
+      Live
+    </CardItem>
+  </a>
+</div>
+
       </CardBody>
     </CardContainer>
     <CardContainer className="inter-var">
@@ -107,7 +110,7 @@ export function Project() {
           />
         </CardItem>
         <div className="flex justify-between items-center mt-10">
-          
+        <a href="https://github.com/vanshsharmaCS/weather_pay">
           <CardItem
             translateZ={20}
             as="button"
@@ -115,6 +118,7 @@ export function Project() {
           >
             Live
           </CardItem>
+          </a>
         </div>
       </CardBody>
     </CardContainer>
@@ -143,7 +147,7 @@ export function Project() {
           />
         </CardItem>
         <div className="flex justify-between items-center mt-10">
-          
+        <a href="https://foodproject11.netlify.app">
           <CardItem
             translateZ={20}
             as="button"
@@ -151,6 +155,7 @@ export function Project() {
           >
             Live
           </CardItem>
+          </a>
         </div>
       </CardBody>
     </CardContainer>
